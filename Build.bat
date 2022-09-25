@@ -1,4 +1,5 @@
+rmdir /s/q Build
+md Build
 cd Build
-rm -r .
 cmake .. -G "MinGW Makefiles"
 cmake --build .
