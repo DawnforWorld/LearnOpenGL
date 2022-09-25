@@ -8,6 +8,8 @@ public:
 
     void Use();
 
+    void SetUniform(const char* name, float value);
+
 private:
     unsigned int GenerateShader(const char* file_path, unsigned int type);
     

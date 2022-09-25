@@ -1,15 +1,17 @@
 #include "OpenGL/Window.h"
 #include "OpenGL/Shader.h"
 
-void Render();
+void Render(std::vector<Shader*> shaders);
 
 int main() {
     Window window(800, 600, "Learn OpenGL");
 
+    window.SetRender(Render);
+
     float vertices[] = {
-        -0.5f, -0.5f, 0.0f,
-        0.5f, -0.5f, 0.0f,
-        0.0f,  0.5f, 0.0f
+        -0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 0.0f,
+        0.5f, -0.5f, 0.0f, 0.0f, 1.0f, 0.0f,
+        0.0f,  0.5f, 0.0f, 0.0f, 0.0f, 1.0f
     }; 
 
     unsigned int VBO, VAO;
@@ -24,18 +26,17 @@ int main() {
 
     shader.Use();
 
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
 
-    window.SetRender(Render);
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(sizeof(float) * 3));
+    glEnableVertexAttribArray(1);
+
     window.Show();
 
     return 0;
 }
 
-void Render() {
-    glClearColor(0.2f, 0.2f, 0.2f, 1.0f);
-    glClear(GL_COLOR_BUFFER_BIT);
-
+void Render(std::vector<Shader*> shaders) {
     glDrawArrays(GL_TRIANGLES, 0, 3);
 }

@@ -72,3 +72,8 @@ unsigned int Shader::GenerateShader(const char* file_path, unsigned int type) {
 
     return shader;
 }
+
+void Shader::SetUniform(const char* name, float value) {
+    this->Use();
+    glUniform1f(glGetUniformLocation(this->m_Shader, name), value);
+}

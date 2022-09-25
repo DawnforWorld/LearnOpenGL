@@ -36,7 +36,10 @@ void Window::Show() {
     while(!glfwWindowShouldClose(this->m_Window)) {
         this->ProcessInput();
 
-        m_Render();
+        glClearColor(0.2f, 0.2f, 0.2f, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT);
+
+        this->m_Render(this->m_Shaders);
 
         glfwSwapBuffers(this->m_Window);\
         glfwPollEvents();
@@ -52,7 +55,11 @@ void Window::ProcessInput() {
 void Window::FramebufferSizeCallBack(GLFWwindow* window, int width, int height) {
     glViewport(0, 0, width, height);
 }
-
+\
 void Window::SetRender(Render render) {
     this->m_Render = render;
+}
+
+void Window::AddShader(Shader* shader) {
+    this->m_Shaders.emplace_back(shader);
 }
