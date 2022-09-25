@@ -10,9 +10,15 @@ public:
     ~Window();
 
     void Show();
+    
+    using Render = void(*)();
+
+    void SetRender(Render render);
 
 private:
     static void FramebufferSizeCallBack(GLFWwindow* window, int width, int height);
+
+    Render m_Render = nullptr;
 
     void ProcessInput();
 

@@ -1,5 +1,3 @@
-set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/Bin)
-
 link_directories(${CommonLibDir})
 
 add_executable(Test main.cpp ${CommonSrcList})
@@ -7,5 +5,9 @@ add_executable(Test main.cpp ${CommonSrcList})
 include_directories(${CommonIncludeDir})
 
 target_link_libraries(Test
-    libglfw3.a
+    glfw3.dll
 )
+
+install(TARGETS Test DESTINATION Test)
+install(DIRECTORY Shader DESTINATION Test)
+install(PROGRAMS ${CommonLibDir}/glfw3.dll DESTINATION Test)

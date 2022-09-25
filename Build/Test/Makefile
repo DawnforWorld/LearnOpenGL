@@ -84,6 +84,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	E:\cmake-3.24.2-windows-x86_64\bin\cmake.exe -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	E:\cmake-3.24.2-windows-x86_64\bin\cmake.exe -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	E:\cmake-3.24.2-windows-x86_64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	E:\cmake-3.24.2-windows-x86_64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	E:\cmake-3.24.2-windows-x86_64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	E:\cmake-3.24.2-windows-x86_64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	cd /d D:\LearnOpenGL\Build && $(CMAKE_COMMAND) -E cmake_progress_start D:\LearnOpenGL\Build\CMakeFiles D:\LearnOpenGL\Build\Test\\CMakeFiles\progress.marks
@@ -128,6 +173,30 @@ Test: Test/CMakeFiles/Test.dir/rule
 Test/fast:
 	cd /d D:\LearnOpenGL\Build && $(MAKE) $(MAKESILENT) -f Test\CMakeFiles\Test.dir\build.make Test/CMakeFiles/Test.dir/build
 .PHONY : Test/fast
+
+__/Common/Src/OpenGL/Shader.obj: __/Common/Src/OpenGL/Shader.cpp.obj
+.PHONY : __/Common/Src/OpenGL/Shader.obj
+
+# target to build an object file
+__/Common/Src/OpenGL/Shader.cpp.obj:
+	cd /d D:\LearnOpenGL\Build && $(MAKE) $(MAKESILENT) -f Test\CMakeFiles\Test.dir\build.make Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Shader.cpp.obj
+.PHONY : __/Common/Src/OpenGL/Shader.cpp.obj
+
+__/Common/Src/OpenGL/Shader.i: __/Common/Src/OpenGL/Shader.cpp.i
+.PHONY : __/Common/Src/OpenGL/Shader.i
+
+# target to preprocess a source file
+__/Common/Src/OpenGL/Shader.cpp.i:
+	cd /d D:\LearnOpenGL\Build && $(MAKE) $(MAKESILENT) -f Test\CMakeFiles\Test.dir\build.make Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Shader.cpp.i
+.PHONY : __/Common/Src/OpenGL/Shader.cpp.i
+
+__/Common/Src/OpenGL/Shader.s: __/Common/Src/OpenGL/Shader.cpp.s
+.PHONY : __/Common/Src/OpenGL/Shader.s
+
+# target to generate assembly for a file
+__/Common/Src/OpenGL/Shader.cpp.s:
+	cd /d D:\LearnOpenGL\Build && $(MAKE) $(MAKESILENT) -f Test\CMakeFiles\Test.dir\build.make Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Shader.cpp.s
+.PHONY : __/Common/Src/OpenGL/Shader.cpp.s
 
 __/Common/Src/OpenGL/Window.obj: __/Common/Src/OpenGL/Window.cpp.obj
 .PHONY : __/Common/Src/OpenGL/Window.obj
@@ -208,8 +277,15 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
+	@echo ... install
+	@echo ... install/local
+	@echo ... install/strip
+	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... Test
+	@echo ... __/Common/Src/OpenGL/Shader.obj
+	@echo ... __/Common/Src/OpenGL/Shader.i
+	@echo ... __/Common/Src/OpenGL/Shader.s
 	@echo ... __/Common/Src/OpenGL/Window.obj
 	@echo ... __/Common/Src/OpenGL/Window.i
 	@echo ... __/Common/Src/OpenGL/Window.s
