@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/LearnOpenGL/Common/Src/glad.c" "Test/CMakeFiles/Test.dir/__/Common/Src/glad.c.obj" "gcc" "Test/CMakeFiles/Test.dir/__/Common/Src/glad.c.obj.d"
   "D:/LearnOpenGL/Common/Src/OpenGL/Shader.cpp" "Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Shader.cpp.obj" "gcc" "Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Shader.cpp.obj.d"
+  "D:/LearnOpenGL/Common/Src/OpenGL/VertexArray.cpp" "Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/VertexArray.cpp.obj" "gcc" "Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/VertexArray.cpp.obj.d"
   "D:/LearnOpenGL/Common/Src/OpenGL/Window.cpp" "Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Window.cpp.obj" "gcc" "Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Window.cpp.obj.d"
   "D:/LearnOpenGL/Test/main.cpp" "Test/CMakeFiles/Test.dir/main.cpp.obj" "gcc" "Test/CMakeFiles/Test.dir/main.cpp.obj.d"
   )

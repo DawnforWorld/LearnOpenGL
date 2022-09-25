@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Test.dir/__/Common/Src/OpenGL/Shader.cpp.obj"
   "CMakeFiles/Test.dir/__/Common/Src/OpenGL/Shader.cpp.obj.d"
+  "CMakeFiles/Test.dir/__/Common/Src/OpenGL/VertexArray.cpp.obj"
+  "CMakeFiles/Test.dir/__/Common/Src/OpenGL/VertexArray.cpp.obj.d"
   "CMakeFiles/Test.dir/__/Common/Src/OpenGL/Window.cpp.obj"
   "CMakeFiles/Test.dir/__/Common/Src/OpenGL/Window.cpp.obj.d"
   "CMakeFiles/Test.dir/__/Common/Src/glad.c.obj"

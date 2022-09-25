@@ -1,5 +1,8 @@
 #include "OpenGL/Window.h"
 #include "OpenGL/Shader.h"
+#include "OpenGL/VertexArray.h"
+
+#include <iostream>
 
 void Render(std::vector<Shader*> shaders);
 
@@ -9,28 +12,27 @@ int main() {
     window.SetRender(Render);
 
     float vertices[] = {
-        -0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 0.0f,
-        0.5f, -0.5f, 0.0f, 0.0f, 1.0f, 0.0f,
-        0.0f,  0.5f, 0.0f, 0.0f, 0.0f, 1.0f
-    }; 
+        // positions         // colors
+         0.5f, -0.5f, 0.0f,  1.0f, 0.0f, 0.0f,  // bottom right
+        -0.5f, -0.5f, 0.0f,  0.0f, 1.0f, 0.0f,  // bottom left
+         0.0f,  0.5f, 0.0f,  0.0f, 0.0f, 1.0f   // top 
+    };
 
-    unsigned int VBO, VAO;
-    glGenVertexArrays(1, &VAO);
-    glGenBuffers(1, &VBO);
+    VertexArray vertex_array_object(vertices, sizeof(vertices), GL_STATIC_DRAW);
 
-    glBindVertexArray(VAO);
-    glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+    vertex_array_object.Bind();
 
-    Shader shader("./Shader/shader.vert", nullptr, "./Shader/shader.frag");
-
-    shader.Use();
-
+    // position attribute
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
-
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(sizeof(float) * 3));
+    // color attribute
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
+
+  
+
+    Shader shader("./Shader/shader.vert", nullptr, "./Shader/shader.frag");
+    shader.Use();
 
     window.Show();
 
@@ -39,4 +41,5 @@ int main() {
 
 void Render(std::vector<Shader*> shaders) {
     glDrawArrays(GL_TRIANGLES, 0, 3);
+
 }
