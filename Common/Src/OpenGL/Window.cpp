@@ -24,6 +24,8 @@ Window::Window(int width, int height, const char* title) :
         std::cout << "Failed to initialize GLAD" << std::endl;
         return;
     }    
+
+    glfwSetFramebufferSizeCallback(this->m_Window, Window::FramebufferSizeCallBack);
 }
 
 Window::~Window() {
@@ -46,4 +48,8 @@ void Window::ProcessInput() {
     if (glfwGetKey(this->m_Window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
         glfwSetWindowShouldClose(this->m_Window, true);
     }
+}
+
+void Window::FramebufferSizeCallBack(GLFWwindow* window, int width, int height) {
+    glViewport(0, 0, width, height);
 }

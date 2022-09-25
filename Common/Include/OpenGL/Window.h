@@ -12,6 +12,8 @@ public:
     void Show();
 
 private:
+    static void FramebufferSizeCallBack(GLFWwindow* window, int width, int height);
+
     void ProcessInput();
 
     int m_Width = 0;
