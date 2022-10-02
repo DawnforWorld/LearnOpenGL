@@ -15,11 +15,6 @@ public:
 
     void Show();
 
-    using Render = void(*)(std::vector<Shader*>);
-
-    void SetRender(Render render);
-    void AddShader(Shader* shader);
-
 private:
     static void FramebufferSizeCallBack(GLFWwindow* window, int width, int height);
 
@@ -30,10 +25,6 @@ private:
     const char* m_Title = nullptr;
 
     GLFWwindow* m_Window = nullptr;
-
-    Render m_Render = nullptr;
-
-    std::vector<Shader*> m_Shaders;
 };
 
 #endif

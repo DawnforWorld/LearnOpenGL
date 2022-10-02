@@ -13,7 +13,6 @@ set(CommonSrcList
 
     ${CommonSrcDir}/OpenGL/Window.cpp
     ${CommonSrcDir}/OpenGL/Shader.cpp
-    ${CommonSrcDir}/OpenGL/VertexArray.cpp
     )
 
 add_subdirectory(Test)

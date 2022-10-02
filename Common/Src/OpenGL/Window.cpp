@@ -33,17 +33,60 @@ Window::~Window() {
 }
 
 void Window::Show() {
+    float vertices[] = {
+        // positions         // colors
+         0.5f, 0.5f, 0.0f,  1.0f, 0.0f, 0.0f,  
+         0.5f, -0.5f, 0.0f,  0.0f, 1.0f, 0.0f,  
+        -0.5f, -0.5f, 0.0f,  0.0f, 0.0f, 1.0f, 
+        -0.5f, 0.5f, 0.0f,  0.0f, 0.0f, 0.0f  
+    };
+
+    unsigned int indices[] = {  // note that we start from 0!
+        0, 1, 3,   // first triangle
+        1, 2, 3    // second triangle
+    };  
+
+    unsigned int VAO, VBO, EBO;
+    glGenVertexArrays(1, &VAO);
+    glGenBuffers(1, &VBO);
+    glGenBuffers(1, &EBO);
+
+    glBindVertexArray(VAO);
+
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+    
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+
+    // position attribute
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
+    glEnableVertexAttribArray(0);
+    // color attribute
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
+    glEnableVertexAttribArray(1);
+
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
+    glBindVertexArray(0);
+
     while(!glfwWindowShouldClose(this->m_Window)) {
         this->ProcessInput();
 
         glClearColor(0.2f, 0.2f, 0.2f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        this->m_Render(this->m_Shaders);
+        glBindVertexArray(VAO);
+        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
-        glfwSwapBuffers(this->m_Window);\
+        glfwSwapBuffers(this->m_Window);
         glfwPollEvents();
     }
+
+    glBindVertexArray(0);
+
+    glDeleteBuffers(1, &VBO);
+    glDeleteBuffers(1, &EBO);
+    glDeleteVertexArrays(1, &VAO);
 }
 
 void Window::ProcessInput() {
@@ -54,12 +97,4 @@ void Window::ProcessInput() {
 
 void Window::FramebufferSizeCallBack(GLFWwindow* window, int width, int height) {
     glViewport(0, 0, width, height);
-}
-\
-void Window::SetRender(Render render) {
-    this->m_Render = render;
-}
-
-void Window::AddShader(Shader* shader) {
-    this->m_Shaders.emplace_back(shader);
 }

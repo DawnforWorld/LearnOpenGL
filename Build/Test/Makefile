@@ -198,30 +198,6 @@ __/Common/Src/OpenGL/Shader.cpp.s:
 	cd /d D:\LearnOpenGL\Build && $(MAKE) $(MAKESILENT) -f Test\CMakeFiles\Test.dir\build.make Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Shader.cpp.s
 .PHONY : __/Common/Src/OpenGL/Shader.cpp.s
 
-__/Common/Src/OpenGL/VertexArray.obj: __/Common/Src/OpenGL/VertexArray.cpp.obj
-.PHONY : __/Common/Src/OpenGL/VertexArray.obj
-
-# target to build an object file
-__/Common/Src/OpenGL/VertexArray.cpp.obj:
-	cd /d D:\LearnOpenGL\Build && $(MAKE) $(MAKESILENT) -f Test\CMakeFiles\Test.dir\build.make Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/VertexArray.cpp.obj
-.PHONY : __/Common/Src/OpenGL/VertexArray.cpp.obj
-
-__/Common/Src/OpenGL/VertexArray.i: __/Common/Src/OpenGL/VertexArray.cpp.i
-.PHONY : __/Common/Src/OpenGL/VertexArray.i
-
-# target to preprocess a source file
-__/Common/Src/OpenGL/VertexArray.cpp.i:
-	cd /d D:\LearnOpenGL\Build && $(MAKE) $(MAKESILENT) -f Test\CMakeFiles\Test.dir\build.make Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/VertexArray.cpp.i
-.PHONY : __/Common/Src/OpenGL/VertexArray.cpp.i
-
-__/Common/Src/OpenGL/VertexArray.s: __/Common/Src/OpenGL/VertexArray.cpp.s
-.PHONY : __/Common/Src/OpenGL/VertexArray.s
-
-# target to generate assembly for a file
-__/Common/Src/OpenGL/VertexArray.cpp.s:
-	cd /d D:\LearnOpenGL\Build && $(MAKE) $(MAKESILENT) -f Test\CMakeFiles\Test.dir\build.make Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/VertexArray.cpp.s
-.PHONY : __/Common/Src/OpenGL/VertexArray.cpp.s
-
 __/Common/Src/OpenGL/Window.obj: __/Common/Src/OpenGL/Window.cpp.obj
 .PHONY : __/Common/Src/OpenGL/Window.obj
 
@@ -310,9 +286,6 @@ help:
 	@echo ... __/Common/Src/OpenGL/Shader.obj
 	@echo ... __/Common/Src/OpenGL/Shader.i
 	@echo ... __/Common/Src/OpenGL/Shader.s
-	@echo ... __/Common/Src/OpenGL/VertexArray.obj
-	@echo ... __/Common/Src/OpenGL/VertexArray.i
-	@echo ... __/Common/Src/OpenGL/VertexArray.s
 	@echo ... __/Common/Src/OpenGL/Window.obj
 	@echo ... __/Common/Src/OpenGL/Window.i
 	@echo ... __/Common/Src/OpenGL/Window.s

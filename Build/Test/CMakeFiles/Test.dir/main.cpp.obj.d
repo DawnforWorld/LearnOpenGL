@@ -62,7 +62,6 @@ Test/CMakeFiles/Test.dir/main.cpp.obj: D:\LearnOpenGL\Test\main.cpp \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/vector.tcc \
  D:/LearnOpenGL/Common/Include/OpenGL/Shader.h \
  D:/LearnOpenGL/Common/Include/OpenGL/Shader.h \
- D:/LearnOpenGL/Common/Include/OpenGL/VertexArray.h \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/iostream \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/ostream \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/ios \
