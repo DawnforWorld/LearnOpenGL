@@ -1,4 +1,5 @@
 D:/LearnOpenGL/Build/../Bin/Test/Test.exe
 D:/LearnOpenGL/Build/../Bin/Test/Shader/shader.frag
 D:/LearnOpenGL/Build/../Bin/Test/Shader/shader.vert
+D:/LearnOpenGL/Build/../Bin/Test/Texture/wall.jpg
 D:/LearnOpenGL/Build/../Bin/Test/glfw3.dll

@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Test.dir/__/Common/Src/OpenGL/Window.cpp.obj.d"
   "CMakeFiles/Test.dir/__/Common/Src/glad.c.obj"
   "CMakeFiles/Test.dir/__/Common/Src/glad.c.obj.d"
+  "CMakeFiles/Test.dir/__/Common/Src/stb_image.cpp.obj"
+  "CMakeFiles/Test.dir/__/Common/Src/stb_image.cpp.obj.d"
   "CMakeFiles/Test.dir/main.cpp.obj"
   "CMakeFiles/Test.dir/main.cpp.obj.d"
   "Test.exe"

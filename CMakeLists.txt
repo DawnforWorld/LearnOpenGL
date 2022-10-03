@@ -13,6 +13,7 @@ set(CommonSrcList
 
     ${CommonSrcDir}/OpenGL/Window.cpp
     ${CommonSrcDir}/OpenGL/Shader.cpp
+    ${CommonSrcDir}/stb_image.cpp
     )
 
 add_subdirectory(Test)

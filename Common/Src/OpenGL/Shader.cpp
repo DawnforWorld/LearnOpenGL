@@ -77,3 +77,8 @@ void Shader::SetUniform(const char* name, float value) {
     this->Use();
     glUniform1f(glGetUniformLocation(this->m_Shader, name), value);
 }
+
+void Shader::SetUniform(const char* name, int value) {
+    this->Use();
+    glUniform1i(glGetUniformLocation(this->m_Shader, name), value);
+}

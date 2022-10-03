@@ -246,6 +246,30 @@ __/Common/Src/glad.c.s:
 	cd /d D:\LearnOpenGL\Build && $(MAKE) $(MAKESILENT) -f Test\CMakeFiles\Test.dir\build.make Test/CMakeFiles/Test.dir/__/Common/Src/glad.c.s
 .PHONY : __/Common/Src/glad.c.s
 
+__/Common/Src/stb_image.obj: __/Common/Src/stb_image.cpp.obj
+.PHONY : __/Common/Src/stb_image.obj
+
+# target to build an object file
+__/Common/Src/stb_image.cpp.obj:
+	cd /d D:\LearnOpenGL\Build && $(MAKE) $(MAKESILENT) -f Test\CMakeFiles\Test.dir\build.make Test/CMakeFiles/Test.dir/__/Common/Src/stb_image.cpp.obj
+.PHONY : __/Common/Src/stb_image.cpp.obj
+
+__/Common/Src/stb_image.i: __/Common/Src/stb_image.cpp.i
+.PHONY : __/Common/Src/stb_image.i
+
+# target to preprocess a source file
+__/Common/Src/stb_image.cpp.i:
+	cd /d D:\LearnOpenGL\Build && $(MAKE) $(MAKESILENT) -f Test\CMakeFiles\Test.dir\build.make Test/CMakeFiles/Test.dir/__/Common/Src/stb_image.cpp.i
+.PHONY : __/Common/Src/stb_image.cpp.i
+
+__/Common/Src/stb_image.s: __/Common/Src/stb_image.cpp.s
+.PHONY : __/Common/Src/stb_image.s
+
+# target to generate assembly for a file
+__/Common/Src/stb_image.cpp.s:
+	cd /d D:\LearnOpenGL\Build && $(MAKE) $(MAKESILENT) -f Test\CMakeFiles\Test.dir\build.make Test/CMakeFiles/Test.dir/__/Common/Src/stb_image.cpp.s
+.PHONY : __/Common/Src/stb_image.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -292,6 +316,9 @@ help:
 	@echo ... __/Common/Src/glad.obj
 	@echo ... __/Common/Src/glad.i
 	@echo ... __/Common/Src/glad.s
+	@echo ... __/Common/Src/stb_image.obj
+	@echo ... __/Common/Src/stb_image.i
+	@echo ... __/Common/Src/stb_image.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

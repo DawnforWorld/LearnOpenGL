@@ -10,4 +10,5 @@ target_link_libraries(Test
 
 install(TARGETS Test DESTINATION Test)
 install(DIRECTORY Shader DESTINATION Test)
+install(DIRECTORY Texture DESTINATION Test)
 install(PROGRAMS ${CommonLibDir}/glfw3.dll DESTINATION Test)
