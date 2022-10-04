@@ -1,4 +1,7 @@
 #include "OpenGL/Shader.h"
+#include "glm/glm.hpp"
+#include "glm/gtc/matrix_transform.hpp"
+#include "glm/gtc/type_ptr.hpp"
 
 #include <fstream>
 #include <sstream>
@@ -81,4 +84,9 @@ void Shader::SetUniform(const char* name, float value) {
 void Shader::SetUniform(const char* name, int value) {
     this->Use();
     glUniform1i(glGetUniformLocation(this->m_Shader, name), value);
+}
+
+void Shader::SetUniform(const char* name, glm::mat4 value) {
+    this->Use();
+    glUniformMatrix4fv(glGetUniformLocation(this->m_Shader, name), 1, GL_FALSE, glm::value_ptr(value));
 }
