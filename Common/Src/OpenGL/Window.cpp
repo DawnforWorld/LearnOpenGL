@@ -120,11 +120,6 @@ void Window::Show(Shader* shader) {
     shader->SetUniform("texture1", 0);
     shader->SetUniform("texture2", 1);
 
-    glm::mat4 trans = glm::mat4(1.0f);
-    trans = glm::rotate(trans, glm::radians(45.0f), glm::vec3(0.0, 0.0, 1.0));
-    trans = glm::scale(trans, glm::vec3(0.5f, 0.5f, 0.5f));
-    shader->SetUniform("transform", trans);
-
     while(!glfwWindowShouldClose(this->m_Window)) {
         this->ProcessInput();
 
@@ -140,6 +135,24 @@ void Window::Show(Shader* shader) {
         glBindTexture(GL_TEXTURE_2D, texture2);
 
         glBindVertexArray(VAO);
+
+        float time = glfwGetTime();
+
+        glm::mat4 trans = glm::mat4(1.0f);
+
+        trans = glm::translate(trans, glm::vec3(0.5f, 0.5f, 0.0f));
+        trans = glm::rotate(trans, time, glm::vec3(0.0, 0.0, 1.0));
+        shader->SetUniform("transform", trans);
+
+        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+
+        trans = glm::mat4(1.0f);
+
+        trans = glm::translate(trans, glm::vec3(-0.7f, 0.7f, 0.0f));
+        trans = glm::scale(trans, glm::vec3(sin(time), sin(time), sin(time)));
+
+        shader->SetUniform("transform", trans);
+
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
         glfwSwapBuffers(this->m_Window);

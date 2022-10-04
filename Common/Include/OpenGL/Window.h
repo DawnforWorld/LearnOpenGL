@@ -23,7 +23,7 @@ private:
     int m_Width = 0;
     int m_Height = 0;
     const char* m_Title = nullptr;
-    float m_MixValue = 0.0f;
+    float m_MixValue = 0.5f;
 
     GLFWwindow* m_Window = nullptr;
 };
