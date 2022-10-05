@@ -174,6 +174,30 @@ Test/fast:
 	cd /d D:\LearnOpenGL\Build && $(MAKE) $(MAKESILENT) -f Test\CMakeFiles\Test.dir\build.make Test/CMakeFiles/Test.dir/build
 .PHONY : Test/fast
 
+__/Common/Src/OpenGL/Camera.obj: __/Common/Src/OpenGL/Camera.cpp.obj
+.PHONY : __/Common/Src/OpenGL/Camera.obj
+
+# target to build an object file
+__/Common/Src/OpenGL/Camera.cpp.obj:
+	cd /d D:\LearnOpenGL\Build && $(MAKE) $(MAKESILENT) -f Test\CMakeFiles\Test.dir\build.make Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Camera.cpp.obj
+.PHONY : __/Common/Src/OpenGL/Camera.cpp.obj
+
+__/Common/Src/OpenGL/Camera.i: __/Common/Src/OpenGL/Camera.cpp.i
+.PHONY : __/Common/Src/OpenGL/Camera.i
+
+# target to preprocess a source file
+__/Common/Src/OpenGL/Camera.cpp.i:
+	cd /d D:\LearnOpenGL\Build && $(MAKE) $(MAKESILENT) -f Test\CMakeFiles\Test.dir\build.make Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Camera.cpp.i
+.PHONY : __/Common/Src/OpenGL/Camera.cpp.i
+
+__/Common/Src/OpenGL/Camera.s: __/Common/Src/OpenGL/Camera.cpp.s
+.PHONY : __/Common/Src/OpenGL/Camera.s
+
+# target to generate assembly for a file
+__/Common/Src/OpenGL/Camera.cpp.s:
+	cd /d D:\LearnOpenGL\Build && $(MAKE) $(MAKESILENT) -f Test\CMakeFiles\Test.dir\build.make Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Camera.cpp.s
+.PHONY : __/Common/Src/OpenGL/Camera.cpp.s
+
 __/Common/Src/OpenGL/Shader.obj: __/Common/Src/OpenGL/Shader.cpp.obj
 .PHONY : __/Common/Src/OpenGL/Shader.obj
 
@@ -307,6 +331,9 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... Test
+	@echo ... __/Common/Src/OpenGL/Camera.obj
+	@echo ... __/Common/Src/OpenGL/Camera.i
+	@echo ... __/Common/Src/OpenGL/Camera.s
 	@echo ... __/Common/Src/OpenGL/Shader.obj
 	@echo ... __/Common/Src/OpenGL/Shader.i
 	@echo ... __/Common/Src/OpenGL/Shader.s

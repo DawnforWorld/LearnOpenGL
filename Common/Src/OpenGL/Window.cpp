@@ -8,49 +8,13 @@
 
 #include "OpenGL/Window.h"
 
-void MouseCallBack(GLFWwindow* window, double xpos, double ypos) {
-    if (is_first) {
-        last_X = xpos;
-        last_Y = ypos;
-        is_first = false;
-    }
+#include "OpenGL/Camera.h"
 
-    float x_offset = xpos - last_X;
-    float y_offset = last_Y - ypos;
-
-    last_X = xpos;
-    last_Y = ypos;
-
-    float sensitivity = 0.1f;
-    x_offset *= sensitivity;
-    y_offset *= sensitivity;
-
-    yaw += x_offset;
-    pitch += y_offset;
-
-    if (pitch > 89.0f) {
-        pitch = 89.0f;
-    }
-    else if (pitch < -89.0f) {
-        pitch = -89.0f;
-    }
-
-    glm::vec3 front;
-    front.x = cos(glm::radians(yaw)) * cos(glm::radians(pitch));
-    front.y = sin(glm::radians(pitch));
-    front.z = sin(glm::radians(yaw)) * cos(glm::radians(pitch));
-    camera_front = glm::normalize(front);
-}
-
-void ScrollCallBack(GLFWwindow* window, double x_offset, double y_offset) {
-    fov -= (float)y_offset;
-    if (fov < 1.0f) {
-        fov = 1.0f;
-    }
-    if (fov > 45.0f) {
-        fov = 45.0f;
-    }
-}
+// camera
+Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));
+float lastX = 800 / 2.0f;
+float lastY = 600 / 2.0f;
+bool firstMouse = true;
 
 Window::Window(int width, int height, const char* title) :
     m_Width(width),
@@ -75,12 +39,10 @@ Window::Window(int width, int height, const char* title) :
         return;
     }    
 
-    glfwSetFramebufferSizeCallback(this->m_Window, Window::FramebufferSizeCallBack);
-    
     glfwSetInputMode(this->m_Window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
-
-    glfwSetCursorPosCallback(this->m_Window, MouseCallBack);
-    glfwSetScrollCallback(this->m_Window, ScrollCallBack);
+    glfwSetFramebufferSizeCallback(this->m_Window, Window::FramebufferSizeCallBack);
+    glfwSetCursorPosCallback(this->m_Window, Window::MouseCallback);
+    glfwSetScrollCallback(this->m_Window, Window::ScrollCallback);
 }
 
 Window::~Window() {
@@ -232,10 +194,10 @@ void Window::Show(Shader* shader) {
 
         glBindVertexArray(VAO);
 
-        glm::mat4 view = glm::lookAt(camera_position, camera_front + camera_position, camera_up);
+        glm::mat4 view = camera.GetViewMatrix();
         shader->SetUniform("view", view);
 
-        glm::mat4 projection = glm::perspective(glm::radians(fov), float(this->m_Width) / float(this->m_Height), 0.1f, 100.0f);
+        glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), float(this->m_Width) / float(this->m_Height), 0.1f, 100.0f);
         shader->SetUniform("projection", projection);
 
         for (unsigned int i = 0; i < sizeof(cubePositions) / sizeof(glm::vec3); i++) {
@@ -279,19 +241,40 @@ void Window::ProcessInput() {
     
     const float speed = 2.0f * this->m_DeltaTime;
     if (glfwGetKey(this->m_Window, GLFW_KEY_W) == GLFW_PRESS) {
-        camera_position += camera_front * speed;
+        camera.ProcessKeyboard(FORWARD, m_DeltaTime);
     }
     else if (glfwGetKey(this->m_Window, GLFW_KEY_S) == GLFW_PRESS) {
-        camera_position -= camera_front * speed;
+        camera.ProcessKeyboard(BACKWARD, m_DeltaTime);
     }
     else if (glfwGetKey(this->m_Window, GLFW_KEY_A) == GLFW_PRESS) {
-        camera_position -= glm::normalize(glm::cross(camera_front, camera_up)) * speed;
+        camera.ProcessKeyboard(LEFT, m_DeltaTime);
     }
     else if (glfwGetKey(this->m_Window, GLFW_KEY_D) == GLFW_PRESS) {
-        camera_position += glm::normalize(glm::cross(camera_front, camera_up)) * speed;
+        camera.ProcessKeyboard(RIGHT, m_DeltaTime);
     }
 }
 
 void Window::FramebufferSizeCallBack(GLFWwindow* window, int width, int height) {
     glViewport(0, 0, width, height);
+}
+
+void Window::MouseCallback(GLFWwindow* window, double xpos, double ypos) {
+    if (firstMouse)
+    {
+        lastX = xpos;
+        lastY = ypos;
+        firstMouse = false;
+    }
+
+    float xoffset = xpos - lastX;
+    float yoffset = lastY - ypos; // reversed since y-coordinates go from bottom to top
+
+    lastX = xpos;
+    lastY = ypos;
+
+    camera.ProcessMouseMovement(xoffset, yoffset);
+}
+
+void Window::ScrollCallback(GLFWwindow* window, double xoffset, double yoffset) {
+    camera.ProcessMouseScroll(static_cast<float>(yoffset));
 }

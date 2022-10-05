@@ -128,11 +128,26 @@ Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/__/Common/Src/OpenGL/Shader.cpp.s"
 	cd /d D:\LearnOpenGL\Build\Test && C:\TDM-GCC-64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\LearnOpenGL\Common\Src\OpenGL\Shader.cpp -o CMakeFiles\Test.dir\__\Common\Src\OpenGL\Shader.cpp.s
 
+Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Camera.cpp.obj: Test/CMakeFiles/Test.dir/flags.make
+Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Camera.cpp.obj: Test/CMakeFiles/Test.dir/includes_CXX.rsp
+Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Camera.cpp.obj: D:/LearnOpenGL/Common/Src/OpenGL/Camera.cpp
+Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Camera.cpp.obj: Test/CMakeFiles/Test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\LearnOpenGL\Build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Camera.cpp.obj"
+	cd /d D:\LearnOpenGL\Build\Test && C:\TDM-GCC-64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Camera.cpp.obj -MF CMakeFiles\Test.dir\__\Common\Src\OpenGL\Camera.cpp.obj.d -o CMakeFiles\Test.dir\__\Common\Src\OpenGL\Camera.cpp.obj -c D:\LearnOpenGL\Common\Src\OpenGL\Camera.cpp
+
+Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/__/Common/Src/OpenGL/Camera.cpp.i"
+	cd /d D:\LearnOpenGL\Build\Test && C:\TDM-GCC-64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\LearnOpenGL\Common\Src\OpenGL\Camera.cpp > CMakeFiles\Test.dir\__\Common\Src\OpenGL\Camera.cpp.i
+
+Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/__/Common/Src/OpenGL/Camera.cpp.s"
+	cd /d D:\LearnOpenGL\Build\Test && C:\TDM-GCC-64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\LearnOpenGL\Common\Src\OpenGL\Camera.cpp -o CMakeFiles\Test.dir\__\Common\Src\OpenGL\Camera.cpp.s
+
 Test/CMakeFiles/Test.dir/__/Common/Src/stb_image.cpp.obj: Test/CMakeFiles/Test.dir/flags.make
 Test/CMakeFiles/Test.dir/__/Common/Src/stb_image.cpp.obj: Test/CMakeFiles/Test.dir/includes_CXX.rsp
 Test/CMakeFiles/Test.dir/__/Common/Src/stb_image.cpp.obj: D:/LearnOpenGL/Common/Src/stb_image.cpp
 Test/CMakeFiles/Test.dir/__/Common/Src/stb_image.cpp.obj: Test/CMakeFiles/Test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\LearnOpenGL\Build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object Test/CMakeFiles/Test.dir/__/Common/Src/stb_image.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\LearnOpenGL\Build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object Test/CMakeFiles/Test.dir/__/Common/Src/stb_image.cpp.obj"
 	cd /d D:\LearnOpenGL\Build\Test && C:\TDM-GCC-64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Test/CMakeFiles/Test.dir/__/Common/Src/stb_image.cpp.obj -MF CMakeFiles\Test.dir\__\Common\Src\stb_image.cpp.obj.d -o CMakeFiles\Test.dir\__\Common\Src\stb_image.cpp.obj -c D:\LearnOpenGL\Common\Src\stb_image.cpp
 
 Test/CMakeFiles/Test.dir/__/Common/Src/stb_image.cpp.i: cmake_force
@@ -149,6 +164,7 @@ Test_OBJECTS = \
 "CMakeFiles/Test.dir/__/Common/Src/glad.c.obj" \
 "CMakeFiles/Test.dir/__/Common/Src/OpenGL/Window.cpp.obj" \
 "CMakeFiles/Test.dir/__/Common/Src/OpenGL/Shader.cpp.obj" \
+"CMakeFiles/Test.dir/__/Common/Src/OpenGL/Camera.cpp.obj" \
 "CMakeFiles/Test.dir/__/Common/Src/stb_image.cpp.obj"
 
 # External object files for target Test
@@ -158,12 +174,13 @@ Test/Test.exe: Test/CMakeFiles/Test.dir/main.cpp.obj
 Test/Test.exe: Test/CMakeFiles/Test.dir/__/Common/Src/glad.c.obj
 Test/Test.exe: Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Window.cpp.obj
 Test/Test.exe: Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Shader.cpp.obj
+Test/Test.exe: Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Camera.cpp.obj
 Test/Test.exe: Test/CMakeFiles/Test.dir/__/Common/Src/stb_image.cpp.obj
 Test/Test.exe: Test/CMakeFiles/Test.dir/build.make
 Test/Test.exe: Test/CMakeFiles/Test.dir/linklibs.rsp
 Test/Test.exe: Test/CMakeFiles/Test.dir/objects1.rsp
 Test/Test.exe: Test/CMakeFiles/Test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\LearnOpenGL\Build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Test.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\LearnOpenGL\Build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Test.exe"
 	cd /d D:\LearnOpenGL\Build\Test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Test.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
