@@ -8,6 +8,50 @@
 
 #include "OpenGL/Window.h"
 
+void MouseCallBack(GLFWwindow* window, double xpos, double ypos) {
+    if (is_first) {
+        last_X = xpos;
+        last_Y = ypos;
+        is_first = false;
+    }
+
+    float x_offset = xpos - last_X;
+    float y_offset = last_Y - ypos;
+
+    last_X = xpos;
+    last_Y = ypos;
+
+    float sensitivity = 0.1f;
+    x_offset *= sensitivity;
+    y_offset *= sensitivity;
+
+    yaw += x_offset;
+    pitch += y_offset;
+
+    if (pitch > 89.0f) {
+        pitch = 89.0f;
+    }
+    else if (pitch < -89.0f) {
+        pitch = -89.0f;
+    }
+
+    glm::vec3 front;
+    front.x = cos(glm::radians(yaw)) * cos(glm::radians(pitch));
+    front.y = sin(glm::radians(pitch));
+    front.z = sin(glm::radians(yaw)) * cos(glm::radians(pitch));
+    camera_front = glm::normalize(front);
+}
+
+void ScrollCallBack(GLFWwindow* window, double x_offset, double y_offset) {
+    fov -= (float)y_offset;
+    if (fov < 1.0f) {
+        fov = 1.0f;
+    }
+    if (fov > 45.0f) {
+        fov = 45.0f;
+    }
+}
+
 Window::Window(int width, int height, const char* title) :
     m_Width(width),
     m_Height(height),
@@ -32,6 +76,11 @@ Window::Window(int width, int height, const char* title) :
     }    
 
     glfwSetFramebufferSizeCallback(this->m_Window, Window::FramebufferSizeCallBack);
+    
+    glfwSetInputMode(this->m_Window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+
+    glfwSetCursorPosCallback(this->m_Window, MouseCallBack);
+    glfwSetScrollCallback(this->m_Window, ScrollCallBack);
 }
 
 Window::~Window() {
@@ -164,6 +213,10 @@ void Window::Show(Shader* shader) {
     };
 
     while(!glfwWindowShouldClose(this->m_Window)) {
+        float current_time = glfwGetTime();
+        this->m_DeltaTime = current_time - this->m_LastFrame;
+        this->m_LastFrame = current_time;
+
         this->ProcessInput();
 
         shader->SetUniform("mix_value", this->m_MixValue);
@@ -179,11 +232,10 @@ void Window::Show(Shader* shader) {
 
         glBindVertexArray(VAO);
 
-        glm::mat4 view = glm::mat4(1.0f);
-        view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
+        glm::mat4 view = glm::lookAt(camera_position, camera_front + camera_position, camera_up);
         shader->SetUniform("view", view);
 
-        glm::mat4 projection = glm::perspective(glm::radians(45.0f), float(this->m_Width) / float(this->m_Height), 0.1f, 100.0f);
+        glm::mat4 projection = glm::perspective(glm::radians(fov), float(this->m_Width) / float(this->m_Height), 0.1f, 100.0f);
         shader->SetUniform("projection", projection);
 
         for (unsigned int i = 0; i < sizeof(cubePositions) / sizeof(glm::vec3); i++) {
@@ -223,6 +275,20 @@ void Window::ProcessInput() {
             m_MixValue -= 0.0005;
         }
         else m_MixValue == 0.0f;
+    }
+    
+    const float speed = 2.0f * this->m_DeltaTime;
+    if (glfwGetKey(this->m_Window, GLFW_KEY_W) == GLFW_PRESS) {
+        camera_position += camera_front * speed;
+    }
+    else if (glfwGetKey(this->m_Window, GLFW_KEY_S) == GLFW_PRESS) {
+        camera_position -= camera_front * speed;
+    }
+    else if (glfwGetKey(this->m_Window, GLFW_KEY_A) == GLFW_PRESS) {
+        camera_position -= glm::normalize(glm::cross(camera_front, camera_up)) * speed;
+    }
+    else if (glfwGetKey(this->m_Window, GLFW_KEY_D) == GLFW_PRESS) {
+        camera_position += glm::normalize(glm::cross(camera_front, camera_up)) * speed;
     }
 }
 
