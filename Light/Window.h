@@ -12,7 +12,7 @@ public:
     Window(int width, int height, const char* title);
     ~Window();
 
-    void Show(Shader* shader);
+    void Show();
 
 private:
     static void FramebufferSizeCallBack(GLFWwindow* window, int width, int height);

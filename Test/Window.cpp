@@ -158,6 +158,7 @@ void Window::Show(Shader* shader) {
 
     glEnable(GL_DEPTH_TEST);  
 
+    shader->Use();
     shader->SetUniform("texture1", 0);
     shader->SetUniform("texture2", 1);
 

@@ -77,16 +77,17 @@ unsigned int Shader::GenerateShader(const char* file_path, unsigned int type) {
 }
 
 void Shader::SetUniform(const char* name, float value) {
-    this->Use();
     glUniform1f(glGetUniformLocation(this->m_Shader, name), value);
 }
 
 void Shader::SetUniform(const char* name, int value) {
-    this->Use();
     glUniform1i(glGetUniformLocation(this->m_Shader, name), value);
 }
 
-void Shader::SetUniform(const char* name, glm::mat4 value) {
-    this->Use();
+void Shader::SetUniform(const char* name, const glm::mat4& value) {
     glUniformMatrix4fv(glGetUniformLocation(this->m_Shader, name), 1, GL_FALSE, glm::value_ptr(value));
+}
+
+void Shader::SetUniform(const char* name, const glm::vec3& value) {
+    glUniform3fv(glGetUniformLocation(this->m_Shader, name), 1, &value[0]); 
 }
