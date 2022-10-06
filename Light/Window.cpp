@@ -6,15 +6,15 @@
 
 #include <iostream>
 
-#include "OpenGL/Window.h"
-
 #include "OpenGL/Camera.h"
 
+#include "Window.h"
+
 // camera
-Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));
-float lastX = 800 / 2.0f;
-float lastY = 600 / 2.0f;
-bool firstMouse = true;
+static Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));
+static float lastX = 800 / 2.0f;
+static float lastY = 600 / 2.0f;
+static bool firstMouse = true;
 
 Window::Window(int width, int height, const char* title) :
     m_Width(width),

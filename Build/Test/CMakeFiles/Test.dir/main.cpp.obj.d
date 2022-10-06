@@ -1,19 +1,5 @@
 Test/CMakeFiles/Test.dir/main.cpp.obj: D:\LearnOpenGL\Test\main.cpp \
- D:/LearnOpenGL/Common/Include/OpenGL/Window.h \
- D:/LearnOpenGL/Common/Include/glad/glad.h \
- D:/LearnOpenGL/Common/Include/KHR/khrplatform.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/stdint.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/stdint.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/crtdefs.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/corecrt.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/_mingw.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/_mingw_mac.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/_mingw_secapi.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/vadefs.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/stddef.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/stddef.h \
- D:/LearnOpenGL/Common/Include/GLFW/glfw3.h \
+ D:\LearnOpenGL\Test\Window.h \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/vector \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/stl_algobase.h \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -43,6 +29,15 @@ Test/CMakeFiles/Test.dir/main.cpp.obj: D:\LearnOpenGL\Test\main.cpp \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/exception.h \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/exception_ptr.h \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/cxxabi_init_exception.h \
+ C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/stddef.h \
+ C:/TDM-GCC-64/x86_64-w64-mingw32/include/stddef.h \
+ C:/TDM-GCC-64/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/TDM-GCC-64/x86_64-w64-mingw32/include/corecrt.h \
+ C:/TDM-GCC-64/x86_64-w64-mingw32/include/_mingw.h \
+ C:/TDM-GCC-64/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/TDM-GCC-64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/TDM-GCC-64/x86_64-w64-mingw32/include/vadefs.h \
+ C:/TDM-GCC-64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/typeinfo \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/hash_bytes.h \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/nested_exception.h \
@@ -60,6 +55,10 @@ Test/CMakeFiles/Test.dir/main.cpp.obj: D:\LearnOpenGL\Test\main.cpp \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/concepts \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/range_cmp.h \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/vector.tcc \
+ D:/LearnOpenGL/Common/Include/glad/glad.h \
+ D:/LearnOpenGL/Common/Include/KHR/khrplatform.h \
+ C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/stdint.h \
+ C:/TDM-GCC-64/x86_64-w64-mingw32/include/stdint.h \
  D:/LearnOpenGL/Common/Include/OpenGL/Shader.h \
  D:/LearnOpenGL/Common/Include/glm/glm.hpp \
  D:/LearnOpenGL/Common/Include/glm/detail/_fixes.hpp \
@@ -217,4 +216,4 @@ Test/CMakeFiles/Test.dir/main.cpp.obj: D:\LearnOpenGL\Test\main.cpp \
  D:/LearnOpenGL/Common/Include/glm/detail/type_half.inl \
  D:/LearnOpenGL/Common/Include/glm/integer.hpp \
  D:/LearnOpenGL/Common/Include/glm/detail/func_integer.inl \
- D:/LearnOpenGL/Common/Include/OpenGL/Shader.h
+ D:/LearnOpenGL/Common/Include/GLFW/glfw3.h

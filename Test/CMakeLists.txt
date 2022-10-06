@@ -1,6 +1,6 @@
 link_directories(${CommonLibDir})
 
-add_executable(Test main.cpp ${CommonSrcList})
+add_executable(Test main.cpp Window.cpp ${CommonSrcList})
 
 include_directories(${CommonIncludeDir})
 

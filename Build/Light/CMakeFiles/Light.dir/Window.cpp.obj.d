@@ -1,5 +1,5 @@
-Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Window.cpp.obj: \
- D:\LearnOpenGL\Common\Src\OpenGL\Window.cpp \
+Light/CMakeFiles/Light.dir/Window.cpp.obj: \
+ D:\LearnOpenGL\Light\Window.cpp \
  D:/LearnOpenGL/Common/Include/glm/glm.hpp \
  D:/LearnOpenGL/Common/Include/glm/detail/_fixes.hpp \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/cmath \
@@ -329,14 +329,14 @@ Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Window.cpp.obj: \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/ostream.tcc \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/istream \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/istream.tcc \
- D:/LearnOpenGL/Common/Include/OpenGL/Window.h \
- D:/LearnOpenGL/Common/Include/glad/glad.h \
- D:/LearnOpenGL/Common/Include/KHR/khrplatform.h \
- D:/LearnOpenGL/Common/Include/GLFW/glfw3.h \
+ D:/LearnOpenGL/Common/Include/OpenGL/Camera.h \
+ D:\LearnOpenGL\Light\Window.h \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/vector \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/stl_uninitialized.h \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/stl_vector.h \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/stl_bvector.h \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/vector.tcc \
+ D:/LearnOpenGL/Common/Include/glad/glad.h \
+ D:/LearnOpenGL/Common/Include/KHR/khrplatform.h \
  D:/LearnOpenGL/Common/Include/OpenGL/Shader.h \
- D:/LearnOpenGL/Common/Include/OpenGL/Camera.h
+ D:/LearnOpenGL/Common/Include/GLFW/glfw3.h

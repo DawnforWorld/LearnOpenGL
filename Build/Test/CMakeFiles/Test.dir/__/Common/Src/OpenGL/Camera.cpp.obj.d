@@ -225,6 +225,4 @@ Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Camera.cpp.obj: \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/cstring \
  C:/TDM-GCC-64/x86_64-w64-mingw32/include/string.h \
  C:/TDM-GCC-64/x86_64-w64-mingw32/include/sec_api/string_s.h \
- D:/LearnOpenGL/Common/Include/glm/gtc/type_ptr.inl \
- D:/LearnOpenGL/Common/Include/GLFW/glfw3.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/GL/gl.h
+ D:/LearnOpenGL/Common/Include/glm/gtc/type_ptr.inl

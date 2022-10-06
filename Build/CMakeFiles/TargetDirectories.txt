@@ -11,3 +11,10 @@ D:/LearnOpenGL/Build/Test/CMakeFiles/list_install_components.dir
 D:/LearnOpenGL/Build/Test/CMakeFiles/install.dir
 D:/LearnOpenGL/Build/Test/CMakeFiles/install/local.dir
 D:/LearnOpenGL/Build/Test/CMakeFiles/install/strip.dir
+D:/LearnOpenGL/Build/Light/CMakeFiles/Light.dir
+D:/LearnOpenGL/Build/Light/CMakeFiles/edit_cache.dir
+D:/LearnOpenGL/Build/Light/CMakeFiles/rebuild_cache.dir
+D:/LearnOpenGL/Build/Light/CMakeFiles/list_install_components.dir
+D:/LearnOpenGL/Build/Light/CMakeFiles/install.dir
+D:/LearnOpenGL/Build/Light/CMakeFiles/install/local.dir
+D:/LearnOpenGL/Build/Light/CMakeFiles/install/strip.dir

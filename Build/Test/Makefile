@@ -174,6 +174,30 @@ Test/fast:
 	cd /d D:\LearnOpenGL\Build && $(MAKE) $(MAKESILENT) -f Test\CMakeFiles\Test.dir\build.make Test/CMakeFiles/Test.dir/build
 .PHONY : Test/fast
 
+Window.obj: Window.cpp.obj
+.PHONY : Window.obj
+
+# target to build an object file
+Window.cpp.obj:
+	cd /d D:\LearnOpenGL\Build && $(MAKE) $(MAKESILENT) -f Test\CMakeFiles\Test.dir\build.make Test/CMakeFiles/Test.dir/Window.cpp.obj
+.PHONY : Window.cpp.obj
+
+Window.i: Window.cpp.i
+.PHONY : Window.i
+
+# target to preprocess a source file
+Window.cpp.i:
+	cd /d D:\LearnOpenGL\Build && $(MAKE) $(MAKESILENT) -f Test\CMakeFiles\Test.dir\build.make Test/CMakeFiles/Test.dir/Window.cpp.i
+.PHONY : Window.cpp.i
+
+Window.s: Window.cpp.s
+.PHONY : Window.s
+
+# target to generate assembly for a file
+Window.cpp.s:
+	cd /d D:\LearnOpenGL\Build && $(MAKE) $(MAKESILENT) -f Test\CMakeFiles\Test.dir\build.make Test/CMakeFiles/Test.dir/Window.cpp.s
+.PHONY : Window.cpp.s
+
 __/Common/Src/OpenGL/Camera.obj: __/Common/Src/OpenGL/Camera.cpp.obj
 .PHONY : __/Common/Src/OpenGL/Camera.obj
 
@@ -221,30 +245,6 @@ __/Common/Src/OpenGL/Shader.s: __/Common/Src/OpenGL/Shader.cpp.s
 __/Common/Src/OpenGL/Shader.cpp.s:
 	cd /d D:\LearnOpenGL\Build && $(MAKE) $(MAKESILENT) -f Test\CMakeFiles\Test.dir\build.make Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Shader.cpp.s
 .PHONY : __/Common/Src/OpenGL/Shader.cpp.s
-
-__/Common/Src/OpenGL/Window.obj: __/Common/Src/OpenGL/Window.cpp.obj
-.PHONY : __/Common/Src/OpenGL/Window.obj
-
-# target to build an object file
-__/Common/Src/OpenGL/Window.cpp.obj:
-	cd /d D:\LearnOpenGL\Build && $(MAKE) $(MAKESILENT) -f Test\CMakeFiles\Test.dir\build.make Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Window.cpp.obj
-.PHONY : __/Common/Src/OpenGL/Window.cpp.obj
-
-__/Common/Src/OpenGL/Window.i: __/Common/Src/OpenGL/Window.cpp.i
-.PHONY : __/Common/Src/OpenGL/Window.i
-
-# target to preprocess a source file
-__/Common/Src/OpenGL/Window.cpp.i:
-	cd /d D:\LearnOpenGL\Build && $(MAKE) $(MAKESILENT) -f Test\CMakeFiles\Test.dir\build.make Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Window.cpp.i
-.PHONY : __/Common/Src/OpenGL/Window.cpp.i
-
-__/Common/Src/OpenGL/Window.s: __/Common/Src/OpenGL/Window.cpp.s
-.PHONY : __/Common/Src/OpenGL/Window.s
-
-# target to generate assembly for a file
-__/Common/Src/OpenGL/Window.cpp.s:
-	cd /d D:\LearnOpenGL\Build && $(MAKE) $(MAKESILENT) -f Test\CMakeFiles\Test.dir\build.make Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Window.cpp.s
-.PHONY : __/Common/Src/OpenGL/Window.cpp.s
 
 __/Common/Src/glad.obj: __/Common/Src/glad.c.obj
 .PHONY : __/Common/Src/glad.obj
@@ -331,15 +331,15 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... Test
+	@echo ... Window.obj
+	@echo ... Window.i
+	@echo ... Window.s
 	@echo ... __/Common/Src/OpenGL/Camera.obj
 	@echo ... __/Common/Src/OpenGL/Camera.i
 	@echo ... __/Common/Src/OpenGL/Camera.s
 	@echo ... __/Common/Src/OpenGL/Shader.obj
 	@echo ... __/Common/Src/OpenGL/Shader.i
 	@echo ... __/Common/Src/OpenGL/Shader.s
-	@echo ... __/Common/Src/OpenGL/Window.obj
-	@echo ... __/Common/Src/OpenGL/Window.i
-	@echo ... __/Common/Src/OpenGL/Window.s
 	@echo ... __/Common/Src/glad.obj
 	@echo ... __/Common/Src/glad.i
 	@echo ... __/Common/Src/glad.s

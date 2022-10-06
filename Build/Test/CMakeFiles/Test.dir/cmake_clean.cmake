@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Test.dir/Window.cpp.obj"
+  "CMakeFiles/Test.dir/Window.cpp.obj.d"
   "CMakeFiles/Test.dir/__/Common/Src/OpenGL/Camera.cpp.obj"
   "CMakeFiles/Test.dir/__/Common/Src/OpenGL/Camera.cpp.obj.d"
   "CMakeFiles/Test.dir/__/Common/Src/OpenGL/Shader.cpp.obj"
   "CMakeFiles/Test.dir/__/Common/Src/OpenGL/Shader.cpp.obj.d"
-  "CMakeFiles/Test.dir/__/Common/Src/OpenGL/Window.cpp.obj"
-  "CMakeFiles/Test.dir/__/Common/Src/OpenGL/Window.cpp.obj.d"
   "CMakeFiles/Test.dir/__/Common/Src/glad.c.obj"
   "CMakeFiles/Test.dir/__/Common/Src/glad.c.obj.d"
   "CMakeFiles/Test.dir/__/Common/Src/stb_image.cpp.obj"

@@ -12,6 +12,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.24.2/CMakeRCCompiler.cmake"
   "CMakeFiles/3.24.2/CMakeSystem.cmake"
   "D:/LearnOpenGL/CMakeLists.txt"
+  "D:/LearnOpenGL/Light/CMakeLists.txt"
   "D:/LearnOpenGL/Test/CMakeLists.txt"
   "E:/cmake-3.24.2-windows-x86_64/share/cmake-3.24/Modules/CMakeCCompiler.cmake.in"
   "E:/cmake-3.24.2-windows-x86_64/share/cmake-3.24/Modules/CMakeCCompilerABI.c"
@@ -129,9 +130,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.24.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "Test/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Light/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "Test/CMakeFiles/Test.dir/DependInfo.cmake"
+  "Light/CMakeFiles/Light.dir/DependInfo.cmake"
   )

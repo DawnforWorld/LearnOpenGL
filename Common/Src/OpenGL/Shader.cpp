@@ -1,14 +1,14 @@
-#include "OpenGL/Shader.h"
 #include "glm/glm.hpp"
 #include "glm/gtc/matrix_transform.hpp"
 #include "glm/gtc/type_ptr.hpp"
+
+#include "glad/glad.h"
 
 #include <fstream>
 #include <sstream>
 #include <iostream>
 
-#include "glad/glad.h"
-#include "GLFW/glfw3.h"
+#include "OpenGL/Shader.h"
 
 Shader::Shader(const char* vertex_file_path, const char* geometry_file_path, const char* fragment_file_path) {
     unsigned int vertex_shader = GenerateShader(vertex_file_path, GL_VERTEX_SHADER);

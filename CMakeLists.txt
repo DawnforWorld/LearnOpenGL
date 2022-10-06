@@ -11,11 +11,11 @@ set(CommonLibDir ${CommonDir}/Lib)
 set(CommonSrcList 
     ${CommonSrcDir}/glad.c 
 
-    ${CommonSrcDir}/OpenGL/Window.cpp
     ${CommonSrcDir}/OpenGL/Shader.cpp
     ${CommonSrcDir}/OpenGL/Camera.cpp
     ${CommonSrcDir}/stb_image.cpp
     )
 
 add_subdirectory(Test)
+add_subdirectory(Light)
 

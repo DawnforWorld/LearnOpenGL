@@ -1,6 +1,5 @@
 Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Shader.cpp.obj: \
  D:\LearnOpenGL\Common\Src\OpenGL\Shader.cpp \
- D:/LearnOpenGL/Common/Include/OpenGL/Shader.h \
  D:/LearnOpenGL/Common/Include/glm/glm.hpp \
  D:/LearnOpenGL/Common/Include/glm/detail/_fixes.hpp \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/cmath \
@@ -226,6 +225,8 @@ Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Shader.cpp.obj: \
  C:/TDM-GCC-64/x86_64-w64-mingw32/include/string.h \
  C:/TDM-GCC-64/x86_64-w64-mingw32/include/sec_api/string_s.h \
  D:/LearnOpenGL/Common/Include/glm/gtc/type_ptr.inl \
+ D:/LearnOpenGL/Common/Include/glad/glad.h \
+ D:/LearnOpenGL/Common/Include/KHR/khrplatform.h \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/fstream \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/istream \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/ios \
@@ -336,6 +337,5 @@ Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Shader.cpp.obj: \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/sstream \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/sstream.tcc \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/iostream \
- D:/LearnOpenGL/Common/Include/glad/glad.h \
- D:/LearnOpenGL/Common/Include/KHR/khrplatform.h \
+ D:/LearnOpenGL/Common/Include/OpenGL/Shader.h \
  D:/LearnOpenGL/Common/Include/GLFW/glfw3.h

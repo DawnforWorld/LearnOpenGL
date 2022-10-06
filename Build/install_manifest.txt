@@ -1,5 +1,14 @@
 D:/LearnOpenGL/Build/../Bin/Test/Test.exe
 D:/LearnOpenGL/Build/../Bin/Test/Shader/shader.frag
 D:/LearnOpenGL/Build/../Bin/Test/Shader/shader.vert
+D:/LearnOpenGL/Build/../Bin/Test/Texture/awesomeface.png
+D:/LearnOpenGL/Build/../Bin/Test/Texture/container.jpg
 D:/LearnOpenGL/Build/../Bin/Test/Texture/wall.jpg
 D:/LearnOpenGL/Build/../Bin/Test/glfw3.dll
+D:/LearnOpenGL/Build/../Bin/Light/Light.exe
+D:/LearnOpenGL/Build/../Bin/Light/Shader/shader.frag
+D:/LearnOpenGL/Build/../Bin/Light/Shader/shader.vert
+D:/LearnOpenGL/Build/../Bin/Light/Texture/awesomeface.png
+D:/LearnOpenGL/Build/../Bin/Light/Texture/container.jpg
+D:/LearnOpenGL/Build/../Bin/Light/Texture/wall.jpg
+D:/LearnOpenGL/Build/../Bin/Light/glfw3.dll

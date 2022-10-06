@@ -83,11 +83,26 @@ Test/CMakeFiles/Test.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/main.cpp.s"
 	cd /d D:\LearnOpenGL\Build\Test && C:\TDM-GCC-64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\LearnOpenGL\Test\main.cpp -o CMakeFiles\Test.dir\main.cpp.s
 
+Test/CMakeFiles/Test.dir/Window.cpp.obj: Test/CMakeFiles/Test.dir/flags.make
+Test/CMakeFiles/Test.dir/Window.cpp.obj: Test/CMakeFiles/Test.dir/includes_CXX.rsp
+Test/CMakeFiles/Test.dir/Window.cpp.obj: D:/LearnOpenGL/Test/Window.cpp
+Test/CMakeFiles/Test.dir/Window.cpp.obj: Test/CMakeFiles/Test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\LearnOpenGL\Build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Test/CMakeFiles/Test.dir/Window.cpp.obj"
+	cd /d D:\LearnOpenGL\Build\Test && C:\TDM-GCC-64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Test/CMakeFiles/Test.dir/Window.cpp.obj -MF CMakeFiles\Test.dir\Window.cpp.obj.d -o CMakeFiles\Test.dir\Window.cpp.obj -c D:\LearnOpenGL\Test\Window.cpp
+
+Test/CMakeFiles/Test.dir/Window.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/Window.cpp.i"
+	cd /d D:\LearnOpenGL\Build\Test && C:\TDM-GCC-64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\LearnOpenGL\Test\Window.cpp > CMakeFiles\Test.dir\Window.cpp.i
+
+Test/CMakeFiles/Test.dir/Window.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/Window.cpp.s"
+	cd /d D:\LearnOpenGL\Build\Test && C:\TDM-GCC-64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\LearnOpenGL\Test\Window.cpp -o CMakeFiles\Test.dir\Window.cpp.s
+
 Test/CMakeFiles/Test.dir/__/Common/Src/glad.c.obj: Test/CMakeFiles/Test.dir/flags.make
 Test/CMakeFiles/Test.dir/__/Common/Src/glad.c.obj: Test/CMakeFiles/Test.dir/includes_C.rsp
 Test/CMakeFiles/Test.dir/__/Common/Src/glad.c.obj: D:/LearnOpenGL/Common/Src/glad.c
 Test/CMakeFiles/Test.dir/__/Common/Src/glad.c.obj: Test/CMakeFiles/Test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\LearnOpenGL\Build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object Test/CMakeFiles/Test.dir/__/Common/Src/glad.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\LearnOpenGL\Build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object Test/CMakeFiles/Test.dir/__/Common/Src/glad.c.obj"
 	cd /d D:\LearnOpenGL\Build\Test && C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Test/CMakeFiles/Test.dir/__/Common/Src/glad.c.obj -MF CMakeFiles\Test.dir\__\Common\Src\glad.c.obj.d -o CMakeFiles\Test.dir\__\Common\Src\glad.c.obj -c D:\LearnOpenGL\Common\Src\glad.c
 
 Test/CMakeFiles/Test.dir/__/Common/Src/glad.c.i: cmake_force
@@ -97,21 +112,6 @@ Test/CMakeFiles/Test.dir/__/Common/Src/glad.c.i: cmake_force
 Test/CMakeFiles/Test.dir/__/Common/Src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Test.dir/__/Common/Src/glad.c.s"
 	cd /d D:\LearnOpenGL\Build\Test && C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\LearnOpenGL\Common\Src\glad.c -o CMakeFiles\Test.dir\__\Common\Src\glad.c.s
-
-Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Window.cpp.obj: Test/CMakeFiles/Test.dir/flags.make
-Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Window.cpp.obj: Test/CMakeFiles/Test.dir/includes_CXX.rsp
-Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Window.cpp.obj: D:/LearnOpenGL/Common/Src/OpenGL/Window.cpp
-Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Window.cpp.obj: Test/CMakeFiles/Test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\LearnOpenGL\Build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Window.cpp.obj"
-	cd /d D:\LearnOpenGL\Build\Test && C:\TDM-GCC-64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Window.cpp.obj -MF CMakeFiles\Test.dir\__\Common\Src\OpenGL\Window.cpp.obj.d -o CMakeFiles\Test.dir\__\Common\Src\OpenGL\Window.cpp.obj -c D:\LearnOpenGL\Common\Src\OpenGL\Window.cpp
-
-Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Window.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Test.dir/__/Common/Src/OpenGL/Window.cpp.i"
-	cd /d D:\LearnOpenGL\Build\Test && C:\TDM-GCC-64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\LearnOpenGL\Common\Src\OpenGL\Window.cpp > CMakeFiles\Test.dir\__\Common\Src\OpenGL\Window.cpp.i
-
-Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Window.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Test.dir/__/Common/Src/OpenGL/Window.cpp.s"
-	cd /d D:\LearnOpenGL\Build\Test && C:\TDM-GCC-64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\LearnOpenGL\Common\Src\OpenGL\Window.cpp -o CMakeFiles\Test.dir\__\Common\Src\OpenGL\Window.cpp.s
 
 Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Shader.cpp.obj: Test/CMakeFiles/Test.dir/flags.make
 Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Shader.cpp.obj: Test/CMakeFiles/Test.dir/includes_CXX.rsp
@@ -161,8 +161,8 @@ Test/CMakeFiles/Test.dir/__/Common/Src/stb_image.cpp.s: cmake_force
 # Object files for target Test
 Test_OBJECTS = \
 "CMakeFiles/Test.dir/main.cpp.obj" \
+"CMakeFiles/Test.dir/Window.cpp.obj" \
 "CMakeFiles/Test.dir/__/Common/Src/glad.c.obj" \
-"CMakeFiles/Test.dir/__/Common/Src/OpenGL/Window.cpp.obj" \
 "CMakeFiles/Test.dir/__/Common/Src/OpenGL/Shader.cpp.obj" \
 "CMakeFiles/Test.dir/__/Common/Src/OpenGL/Camera.cpp.obj" \
 "CMakeFiles/Test.dir/__/Common/Src/stb_image.cpp.obj"
@@ -171,8 +171,8 @@ Test_OBJECTS = \
 Test_EXTERNAL_OBJECTS =
 
 Test/Test.exe: Test/CMakeFiles/Test.dir/main.cpp.obj
+Test/Test.exe: Test/CMakeFiles/Test.dir/Window.cpp.obj
 Test/Test.exe: Test/CMakeFiles/Test.dir/__/Common/Src/glad.c.obj
-Test/Test.exe: Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Window.cpp.obj
 Test/Test.exe: Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Shader.cpp.obj
 Test/Test.exe: Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Camera.cpp.obj
 Test/Test.exe: Test/CMakeFiles/Test.dir/__/Common/Src/stb_image.cpp.obj

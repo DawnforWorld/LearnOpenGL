@@ -173,6 +173,19 @@ Test/fast:
 	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\Test.dir\build.make Test/CMakeFiles/Test.dir/build
 .PHONY : Test/fast
 
+#=============================================================================
+# Target rules for targets named Light
+
+# Build rule for target.
+Light: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Light
+.PHONY : Light
+
+# fast build rule for target.
+Light/fast:
+	$(MAKE) $(MAKESILENT) -f Light\CMakeFiles\Light.dir\build.make Light/CMakeFiles/Light.dir/build
+.PHONY : Light/fast
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -185,6 +198,7 @@ help:
 	@echo ... install/strip
 	@echo ... list_install_components
 	@echo ... rebuild_cache
+	@echo ... Light
 	@echo ... Test
 .PHONY : help
 

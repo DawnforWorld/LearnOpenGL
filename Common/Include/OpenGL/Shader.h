@@ -3,6 +3,8 @@
 
 #include "glm/glm.hpp"
 
+#include "GLFW/glfw3.h"
+
 class Shader {
 public:
     Shader(const char* vertex_file_path, const char* geometry_file_path, const char* fragment_file_path);
