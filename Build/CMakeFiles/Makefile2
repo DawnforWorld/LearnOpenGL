@@ -113,12 +113,12 @@ Test/clean: Test/CMakeFiles/Test.dir/clean
 Test/CMakeFiles/Test.dir/all:
 	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\Test.dir\build.make Test/CMakeFiles/Test.dir/depend
 	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\Test.dir\build.make Test/CMakeFiles/Test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\LearnOpenGL\Build\CMakeFiles --progress-num=8,9,10,11,12,13,14 "Built target Test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\LearnOpenGL\Build\CMakeFiles --progress-num=9,10,11,12,13,14,15,16 "Built target Test"
 .PHONY : Test/CMakeFiles/Test.dir/all
 
 # Build rule for subdir invocation for target.
 Test/CMakeFiles/Test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\LearnOpenGL\Build\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\LearnOpenGL\Build\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Test/CMakeFiles/Test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\LearnOpenGL\Build\CMakeFiles 0
 .PHONY : Test/CMakeFiles/Test.dir/rule
@@ -139,12 +139,12 @@ Test/CMakeFiles/Test.dir/clean:
 Light/CMakeFiles/Light.dir/all:
 	$(MAKE) $(MAKESILENT) -f Light\CMakeFiles\Light.dir\build.make Light/CMakeFiles/Light.dir/depend
 	$(MAKE) $(MAKESILENT) -f Light\CMakeFiles\Light.dir\build.make Light/CMakeFiles/Light.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\LearnOpenGL\Build\CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target Light"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\LearnOpenGL\Build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target Light"
 .PHONY : Light/CMakeFiles/Light.dir/all
 
 # Build rule for subdir invocation for target.
 Light/CMakeFiles/Light.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\LearnOpenGL\Build\CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\LearnOpenGL\Build\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Light/CMakeFiles/Light.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\LearnOpenGL\Build\CMakeFiles 0
 .PHONY : Light/CMakeFiles/Light.dir/rule

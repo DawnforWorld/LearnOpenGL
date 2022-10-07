@@ -13,6 +13,7 @@ set(CommonSrcList
 
     ${CommonSrcDir}/OpenGL/Shader.cpp
     ${CommonSrcDir}/OpenGL/Camera.cpp
+    ${CommonSrcDir}/OpenGL/Material.cpp
     ${CommonSrcDir}/stb_image.cpp
     )
 

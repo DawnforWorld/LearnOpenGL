@@ -12,5 +12,7 @@ D:/LearnOpenGL/Build/../Bin/Light/Shader/shader.frag
 D:/LearnOpenGL/Build/../Bin/Light/Shader/shader.vert
 D:/LearnOpenGL/Build/../Bin/Light/Texture/awesomeface.png
 D:/LearnOpenGL/Build/../Bin/Light/Texture/container.jpg
+D:/LearnOpenGL/Build/../Bin/Light/Texture/container2.png
+D:/LearnOpenGL/Build/../Bin/Light/Texture/container2_specular.png
 D:/LearnOpenGL/Build/../Bin/Light/Texture/wall.jpg
 D:/LearnOpenGL/Build/../Bin/Light/glfw3.dll

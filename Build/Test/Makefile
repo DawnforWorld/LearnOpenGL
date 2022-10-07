@@ -222,6 +222,30 @@ __/Common/Src/OpenGL/Camera.cpp.s:
 	cd /d D:\LearnOpenGL\Build && $(MAKE) $(MAKESILENT) -f Test\CMakeFiles\Test.dir\build.make Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Camera.cpp.s
 .PHONY : __/Common/Src/OpenGL/Camera.cpp.s
 
+__/Common/Src/OpenGL/Material.obj: __/Common/Src/OpenGL/Material.cpp.obj
+.PHONY : __/Common/Src/OpenGL/Material.obj
+
+# target to build an object file
+__/Common/Src/OpenGL/Material.cpp.obj:
+	cd /d D:\LearnOpenGL\Build && $(MAKE) $(MAKESILENT) -f Test\CMakeFiles\Test.dir\build.make Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Material.cpp.obj
+.PHONY : __/Common/Src/OpenGL/Material.cpp.obj
+
+__/Common/Src/OpenGL/Material.i: __/Common/Src/OpenGL/Material.cpp.i
+.PHONY : __/Common/Src/OpenGL/Material.i
+
+# target to preprocess a source file
+__/Common/Src/OpenGL/Material.cpp.i:
+	cd /d D:\LearnOpenGL\Build && $(MAKE) $(MAKESILENT) -f Test\CMakeFiles\Test.dir\build.make Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Material.cpp.i
+.PHONY : __/Common/Src/OpenGL/Material.cpp.i
+
+__/Common/Src/OpenGL/Material.s: __/Common/Src/OpenGL/Material.cpp.s
+.PHONY : __/Common/Src/OpenGL/Material.s
+
+# target to generate assembly for a file
+__/Common/Src/OpenGL/Material.cpp.s:
+	cd /d D:\LearnOpenGL\Build && $(MAKE) $(MAKESILENT) -f Test\CMakeFiles\Test.dir\build.make Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Material.cpp.s
+.PHONY : __/Common/Src/OpenGL/Material.cpp.s
+
 __/Common/Src/OpenGL/Shader.obj: __/Common/Src/OpenGL/Shader.cpp.obj
 .PHONY : __/Common/Src/OpenGL/Shader.obj
 
@@ -337,6 +361,9 @@ help:
 	@echo ... __/Common/Src/OpenGL/Camera.obj
 	@echo ... __/Common/Src/OpenGL/Camera.i
 	@echo ... __/Common/Src/OpenGL/Camera.s
+	@echo ... __/Common/Src/OpenGL/Material.obj
+	@echo ... __/Common/Src/OpenGL/Material.i
+	@echo ... __/Common/Src/OpenGL/Material.s
 	@echo ... __/Common/Src/OpenGL/Shader.obj
 	@echo ... __/Common/Src/OpenGL/Shader.i
 	@echo ... __/Common/Src/OpenGL/Shader.s

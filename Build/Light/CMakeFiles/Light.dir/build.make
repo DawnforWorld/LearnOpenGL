@@ -143,11 +143,26 @@ Light/CMakeFiles/Light.dir/__/Common/Src/OpenGL/Camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Light.dir/__/Common/Src/OpenGL/Camera.cpp.s"
 	cd /d D:\LearnOpenGL\Build\Light && C:\TDM-GCC-64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\LearnOpenGL\Common\Src\OpenGL\Camera.cpp -o CMakeFiles\Light.dir\__\Common\Src\OpenGL\Camera.cpp.s
 
+Light/CMakeFiles/Light.dir/__/Common/Src/OpenGL/Material.cpp.obj: Light/CMakeFiles/Light.dir/flags.make
+Light/CMakeFiles/Light.dir/__/Common/Src/OpenGL/Material.cpp.obj: Light/CMakeFiles/Light.dir/includes_CXX.rsp
+Light/CMakeFiles/Light.dir/__/Common/Src/OpenGL/Material.cpp.obj: D:/LearnOpenGL/Common/Src/OpenGL/Material.cpp
+Light/CMakeFiles/Light.dir/__/Common/Src/OpenGL/Material.cpp.obj: Light/CMakeFiles/Light.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\LearnOpenGL\Build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object Light/CMakeFiles/Light.dir/__/Common/Src/OpenGL/Material.cpp.obj"
+	cd /d D:\LearnOpenGL\Build\Light && C:\TDM-GCC-64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Light/CMakeFiles/Light.dir/__/Common/Src/OpenGL/Material.cpp.obj -MF CMakeFiles\Light.dir\__\Common\Src\OpenGL\Material.cpp.obj.d -o CMakeFiles\Light.dir\__\Common\Src\OpenGL\Material.cpp.obj -c D:\LearnOpenGL\Common\Src\OpenGL\Material.cpp
+
+Light/CMakeFiles/Light.dir/__/Common/Src/OpenGL/Material.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Light.dir/__/Common/Src/OpenGL/Material.cpp.i"
+	cd /d D:\LearnOpenGL\Build\Light && C:\TDM-GCC-64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\LearnOpenGL\Common\Src\OpenGL\Material.cpp > CMakeFiles\Light.dir\__\Common\Src\OpenGL\Material.cpp.i
+
+Light/CMakeFiles/Light.dir/__/Common/Src/OpenGL/Material.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Light.dir/__/Common/Src/OpenGL/Material.cpp.s"
+	cd /d D:\LearnOpenGL\Build\Light && C:\TDM-GCC-64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\LearnOpenGL\Common\Src\OpenGL\Material.cpp -o CMakeFiles\Light.dir\__\Common\Src\OpenGL\Material.cpp.s
+
 Light/CMakeFiles/Light.dir/__/Common/Src/stb_image.cpp.obj: Light/CMakeFiles/Light.dir/flags.make
 Light/CMakeFiles/Light.dir/__/Common/Src/stb_image.cpp.obj: Light/CMakeFiles/Light.dir/includes_CXX.rsp
 Light/CMakeFiles/Light.dir/__/Common/Src/stb_image.cpp.obj: D:/LearnOpenGL/Common/Src/stb_image.cpp
 Light/CMakeFiles/Light.dir/__/Common/Src/stb_image.cpp.obj: Light/CMakeFiles/Light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\LearnOpenGL\Build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object Light/CMakeFiles/Light.dir/__/Common/Src/stb_image.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\LearnOpenGL\Build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object Light/CMakeFiles/Light.dir/__/Common/Src/stb_image.cpp.obj"
 	cd /d D:\LearnOpenGL\Build\Light && C:\TDM-GCC-64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Light/CMakeFiles/Light.dir/__/Common/Src/stb_image.cpp.obj -MF CMakeFiles\Light.dir\__\Common\Src\stb_image.cpp.obj.d -o CMakeFiles\Light.dir\__\Common\Src\stb_image.cpp.obj -c D:\LearnOpenGL\Common\Src\stb_image.cpp
 
 Light/CMakeFiles/Light.dir/__/Common/Src/stb_image.cpp.i: cmake_force
@@ -165,6 +180,7 @@ Light_OBJECTS = \
 "CMakeFiles/Light.dir/__/Common/Src/glad.c.obj" \
 "CMakeFiles/Light.dir/__/Common/Src/OpenGL/Shader.cpp.obj" \
 "CMakeFiles/Light.dir/__/Common/Src/OpenGL/Camera.cpp.obj" \
+"CMakeFiles/Light.dir/__/Common/Src/OpenGL/Material.cpp.obj" \
 "CMakeFiles/Light.dir/__/Common/Src/stb_image.cpp.obj"
 
 # External object files for target Light
@@ -175,12 +191,13 @@ Light/Light.exe: Light/CMakeFiles/Light.dir/Window.cpp.obj
 Light/Light.exe: Light/CMakeFiles/Light.dir/__/Common/Src/glad.c.obj
 Light/Light.exe: Light/CMakeFiles/Light.dir/__/Common/Src/OpenGL/Shader.cpp.obj
 Light/Light.exe: Light/CMakeFiles/Light.dir/__/Common/Src/OpenGL/Camera.cpp.obj
+Light/Light.exe: Light/CMakeFiles/Light.dir/__/Common/Src/OpenGL/Material.cpp.obj
 Light/Light.exe: Light/CMakeFiles/Light.dir/__/Common/Src/stb_image.cpp.obj
 Light/Light.exe: Light/CMakeFiles/Light.dir/build.make
 Light/Light.exe: Light/CMakeFiles/Light.dir/linklibs.rsp
 Light/Light.exe: Light/CMakeFiles/Light.dir/objects1.rsp
 Light/Light.exe: Light/CMakeFiles/Light.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\LearnOpenGL\Build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Light.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\LearnOpenGL\Build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Light.exe"
 	cd /d D:\LearnOpenGL\Build\Light && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Light.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

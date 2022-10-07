@@ -84,6 +84,10 @@ void Shader::SetUniform(const char* name, int value) {
     glUniform1i(glGetUniformLocation(this->m_Shader, name), value);
 }
 
+void Shader::SetUniform(const char* name, unsigned int value) {
+    glUniform1i(glGetUniformLocation(this->m_Shader, name), value);
+}
+
 void Shader::SetUniform(const char* name, const glm::mat4& value) {
     glUniformMatrix4fv(glGetUniformLocation(this->m_Shader, name), 1, GL_FALSE, glm::value_ptr(value));
 }

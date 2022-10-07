@@ -14,6 +14,7 @@ public:
 
     void SetUniform(const char* name, float value);
     void SetUniform(const char* name, int value);
+    void SetUniform(const char* name, unsigned int value);
     void SetUniform(const char* name, const glm::mat4& value);
     void SetUniform(const char* name, const glm::vec3& value);
 

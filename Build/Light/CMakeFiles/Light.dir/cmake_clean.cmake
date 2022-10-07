@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Light.dir/Window.cpp.obj.d"
   "CMakeFiles/Light.dir/__/Common/Src/OpenGL/Camera.cpp.obj"
   "CMakeFiles/Light.dir/__/Common/Src/OpenGL/Camera.cpp.obj.d"
+  "CMakeFiles/Light.dir/__/Common/Src/OpenGL/Material.cpp.obj"
+  "CMakeFiles/Light.dir/__/Common/Src/OpenGL/Material.cpp.obj.d"
   "CMakeFiles/Light.dir/__/Common/Src/OpenGL/Shader.cpp.obj"
   "CMakeFiles/Light.dir/__/Common/Src/OpenGL/Shader.cpp.obj.d"
   "CMakeFiles/Light.dir/__/Common/Src/glad.c.obj"

@@ -1,19 +1,6 @@
-Light/CMakeFiles/Light.dir/Window.cpp.obj: \
- D:\LearnOpenGL\Light\Window.cpp \
- D:/LearnOpenGL/Common/Include/glad/glad.h \
- D:/LearnOpenGL/Common/Include/KHR/khrplatform.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/stdint.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/stdint.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/crtdefs.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/corecrt.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/_mingw.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/_mingw_mac.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/_mingw_secapi.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/vadefs.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/stddef.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/stddef.h \
- D:/LearnOpenGL/Common/Include/GLFW/glfw3.h \
+Light/CMakeFiles/Light.dir/__/Common/Src/OpenGL/Material.cpp.obj: \
+ D:\LearnOpenGL\Common\Src\OpenGL\Material.cpp \
+ D:/LearnOpenGL/Common/Include/OpenGL/Material.h \
  D:/LearnOpenGL/Common/Include/glm/glm.hpp \
  D:/LearnOpenGL/Common/Include/glm/detail/_fixes.hpp \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/cmath \
@@ -23,6 +10,13 @@ Light/CMakeFiles/Light.dir/Window.cpp.obj: \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/cpp_type_traits.h \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/ext/type_traits.h \
  C:/TDM-GCC-64/x86_64-w64-mingw32/include/math.h \
+ C:/TDM-GCC-64/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/TDM-GCC-64/x86_64-w64-mingw32/include/corecrt.h \
+ C:/TDM-GCC-64/x86_64-w64-mingw32/include/_mingw.h \
+ C:/TDM-GCC-64/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/TDM-GCC-64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/TDM-GCC-64/x86_64-w64-mingw32/include/vadefs.h \
+ C:/TDM-GCC-64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/std_abs.h \
  C:/TDM-GCC-64/x86_64-w64-mingw32/include/stdlib.h \
  C:/TDM-GCC-64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
@@ -37,8 +31,12 @@ Light/CMakeFiles/Light.dir/Window.cpp.obj: \
  C:/TDM-GCC-64/x86_64-w64-mingw32/include/assert.h \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/cstdlib \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/cstddef \
+ C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/stddef.h \
+ C:/TDM-GCC-64/x86_64-w64-mingw32/include/stddef.h \
  D:/LearnOpenGL/Common/Include/glm/simd/platform.h \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/cstdint \
+ C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/stdint.h \
+ C:/TDM-GCC-64/x86_64-w64-mingw32/include/stdint.h \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/type_traits \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/climits \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/cfloat \
@@ -176,64 +174,14 @@ Light/CMakeFiles/Light.dir/Window.cpp.obj: \
  D:/LearnOpenGL/Common/Include/glm/detail/type_half.inl \
  D:/LearnOpenGL/Common/Include/glm/integer.hpp \
  D:/LearnOpenGL/Common/Include/glm/detail/func_integer.inl \
- D:/LearnOpenGL/Common/Include/glm/gtc/matrix_transform.hpp \
- D:/LearnOpenGL/Common/Include/glm/ext/matrix_projection.hpp \
- D:/LearnOpenGL/Common/Include/glm/gtc/constants.hpp \
- D:/LearnOpenGL/Common/Include/glm/ext/scalar_constants.hpp \
- D:/LearnOpenGL/Common/Include/glm/ext/scalar_constants.inl \
- D:/LearnOpenGL/Common/Include/glm/gtc/constants.inl \
- D:/LearnOpenGL/Common/Include/glm/ext/matrix_projection.inl \
- D:/LearnOpenGL/Common/Include/glm/ext/matrix_clip_space.hpp \
- D:/LearnOpenGL/Common/Include/glm/ext/matrix_clip_space.inl \
- D:/LearnOpenGL/Common/Include/glm/ext/matrix_transform.hpp \
- D:/LearnOpenGL/Common/Include/glm/ext/matrix_transform.inl \
- D:/LearnOpenGL/Common/Include/glm/gtc/matrix_transform.inl \
- D:/LearnOpenGL/Common/Include/glm/gtc/type_ptr.hpp \
- D:/LearnOpenGL/Common/Include/glm/gtc/quaternion.hpp \
- D:/LearnOpenGL/Common/Include/glm/ext/vector_relational.hpp \
- D:/LearnOpenGL/Common/Include/glm/ext/vector_relational.inl \
- D:/LearnOpenGL/Common/Include/glm/detail/type_float.hpp \
- D:/LearnOpenGL/Common/Include/glm/ext/quaternion_common.hpp \
- D:/LearnOpenGL/Common/Include/glm/ext/quaternion_geometric.hpp \
- D:/LearnOpenGL/Common/Include/glm/ext/quaternion_geometric.inl \
- D:/LearnOpenGL/Common/Include/glm/ext/quaternion_common.inl \
- D:/LearnOpenGL/Common/Include/glm/ext/quaternion_float.hpp \
- D:/LearnOpenGL/Common/Include/glm/detail/type_quat.hpp \
- D:/LearnOpenGL/Common/Include/glm/ext/quaternion_relational.hpp \
- D:/LearnOpenGL/Common/Include/glm/ext/quaternion_relational.inl \
- D:/LearnOpenGL/Common/Include/glm/detail/type_quat.inl \
- D:/LearnOpenGL/Common/Include/glm/ext/quaternion_float_precision.hpp \
- D:/LearnOpenGL/Common/Include/glm/ext/quaternion_double.hpp \
- D:/LearnOpenGL/Common/Include/glm/ext/quaternion_double_precision.hpp \
- D:/LearnOpenGL/Common/Include/glm/ext/quaternion_trigonometric.hpp \
- D:/LearnOpenGL/Common/Include/glm/ext/quaternion_trigonometric.inl \
- D:/LearnOpenGL/Common/Include/glm/ext/quaternion_transform.hpp \
- D:/LearnOpenGL/Common/Include/glm/ext/quaternion_transform.inl \
- D:/LearnOpenGL/Common/Include/glm/gtc/quaternion.inl \
- D:/LearnOpenGL/Common/Include/glm/gtc/epsilon.hpp \
- D:/LearnOpenGL/Common/Include/glm/detail/setup.hpp \
- D:/LearnOpenGL/Common/Include/glm/gtc/epsilon.inl \
- D:/LearnOpenGL/Common/Include/glm/gtc/vec1.hpp \
- D:/LearnOpenGL/Common/Include/glm/ext/vector_bool1.hpp \
- D:/LearnOpenGL/Common/Include/glm/ext/vector_bool1_precision.hpp \
- D:/LearnOpenGL/Common/Include/glm/ext/vector_float1.hpp \
- D:/LearnOpenGL/Common/Include/glm/ext/vector_float1_precision.hpp \
- D:/LearnOpenGL/Common/Include/glm/ext/vector_double1.hpp \
- D:/LearnOpenGL/Common/Include/glm/ext/vector_double1_precision.hpp \
- D:/LearnOpenGL/Common/Include/glm/ext/vector_int1.hpp \
- D:/LearnOpenGL/Common/Include/glm/ext/vector_int1_sized.hpp \
- D:/LearnOpenGL/Common/Include/glm/ext/vector_uint1.hpp \
- D:/LearnOpenGL/Common/Include/glm/ext/vector_uint1_sized.hpp \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/cstring \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/string.h \
- C:/TDM-GCC-64/x86_64-w64-mingw32/include/sec_api/string_s.h \
- D:/LearnOpenGL/Common/Include/glm/gtc/type_ptr.inl \
  D:/LearnOpenGL/Common/Include/stb_image.h \
  C:/TDM-GCC-64/x86_64-w64-mingw32/include/stdio.h \
  C:/TDM-GCC-64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
  C:/TDM-GCC-64/x86_64-w64-mingw32/include/_mingw_off_t.h \
  C:/TDM-GCC-64/x86_64-w64-mingw32/include/swprintf.inl \
  C:/TDM-GCC-64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ D:/LearnOpenGL/Common/Include/glad/glad.h \
+ D:/LearnOpenGL/Common/Include/KHR/khrplatform.h \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/iostream \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/ostream \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/ios \
@@ -331,8 +279,4 @@ Light/CMakeFiles/Light.dir/Window.cpp.obj: \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/basic_ios.tcc \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/ostream.tcc \
  C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/istream \
- C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/istream.tcc \
- D:/LearnOpenGL/Common/Include/OpenGL/Camera.h \
- D:/LearnOpenGL/Common/Include/OpenGL/Material.h \
- D:/LearnOpenGL/Common/Include/OpenGL/Shader.h \
- D:\LearnOpenGL\Light\Window.h
+ C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/bits/istream.tcc

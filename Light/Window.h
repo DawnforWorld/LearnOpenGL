@@ -1,11 +1,7 @@
 #ifndef __OPENGL_WINDOW_H__
 #define __OPENGL_WINDOW_H__
 
-#include <vector>
-
-#include "glad/glad.h"
-
-#include "OpenGL/Shader.h"
+#include "GLFW/glfw3.h"
 
 class Window {
 public:

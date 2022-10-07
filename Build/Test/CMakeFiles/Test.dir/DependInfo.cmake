@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/LearnOpenGL/Common/Src/glad.c" "Test/CMakeFiles/Test.dir/__/Common/Src/glad.c.obj" "gcc" "Test/CMakeFiles/Test.dir/__/Common/Src/glad.c.obj.d"
   "D:/LearnOpenGL/Test/Window.cpp" "Test/CMakeFiles/Test.dir/Window.cpp.obj" "gcc" "Test/CMakeFiles/Test.dir/Window.cpp.obj.d"
   "D:/LearnOpenGL/Common/Src/OpenGL/Camera.cpp" "Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Camera.cpp.obj" "gcc" "Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Camera.cpp.obj.d"
+  "D:/LearnOpenGL/Common/Src/OpenGL/Material.cpp" "Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Material.cpp.obj" "gcc" "Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Material.cpp.obj.d"
   "D:/LearnOpenGL/Common/Src/OpenGL/Shader.cpp" "Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Shader.cpp.obj" "gcc" "Test/CMakeFiles/Test.dir/__/Common/Src/OpenGL/Shader.cpp.obj.d"
   "D:/LearnOpenGL/Common/Src/stb_image.cpp" "Test/CMakeFiles/Test.dir/__/Common/Src/stb_image.cpp.obj" "gcc" "Test/CMakeFiles/Test.dir/__/Common/Src/stb_image.cpp.obj.d"
   "D:/LearnOpenGL/Test/main.cpp" "Test/CMakeFiles/Test.dir/main.cpp.obj" "gcc" "Test/CMakeFiles/Test.dir/main.cpp.obj.d"
